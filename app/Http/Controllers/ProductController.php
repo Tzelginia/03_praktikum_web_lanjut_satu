@@ -21,4 +21,7 @@ class ProductController extends Controller
     public function cat4(){
         return view('coba.product.kolak-kids-songs');
     }
+     public function product(){
+        return view('coba.product');
+    }
 }
