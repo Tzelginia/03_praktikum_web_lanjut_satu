@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,3 +19,4 @@
     <h1 class="text-center"><b>Selamat Datang Di Website Contact Us</h1> </b>    
   </div>
 </div>
+@endsection
