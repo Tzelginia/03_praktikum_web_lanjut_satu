@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<div class="card-header">{{ __('Halaman Utama') }}</div>
 
+<div class="card-body">
+    @if (session('status'))
+        <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+        </div>
+    @endif
+
+    {{ __('Welcome!') }}
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="jumbotron">
   <div class="container">
     <h1 class="text-center"><b>Selamat Datang Di Website Saya</h1> </b>    
@@ -60,3 +77,5 @@
 </div>
 
 </body>
+     
+@endsection
