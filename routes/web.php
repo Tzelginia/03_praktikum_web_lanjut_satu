@@ -27,6 +27,8 @@ use App\Http\Controllers\ContactController;
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //home
 Route::get('/home', [App\Http\Controllers\HalamanController::class, 'index'])->name('home');
+//product-route biasa
+Route::get('/product', [ProductController::class, 'product'])->name('product');
 //product-prefix
 Route::prefix("Category")->group(function(){
     Route::get("/marbel-edu-games", [ProductController::class, 'cat1'])->name('cat1');
@@ -34,6 +36,8 @@ Route::prefix("Category")->group(function(){
     Route::get("/riri-story-books", [ProductController::class, 'cat3'])->name('cat3');
     Route::get("/kolak-kids-songs", [ProductController::class, 'cat4'])->name('cat4');
 });
+//program-route biasa
+Route::get('/program', [ProgramController::class, 'program'])->name('program');
 //program-route profix
 Route::prefix("Program")->group(function(){
     Route::get("/karir", [ProgramController::class, 'karir'])->name('karir');
