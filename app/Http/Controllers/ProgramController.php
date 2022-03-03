@@ -17,4 +17,7 @@ class ProgramController extends Controller
     public function kunjungan_industri() {
         return view('coba.program.kunjunganIndustri');
     }
+     public function program(){
+        return view('coba.program');
+    }
 }
